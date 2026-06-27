@@ -1,0 +1,133 @@
+/* --- LUXURY ELEGANT GOLD & BLACK THEME --- */
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
+
+body { 
+    /* Menggunakan font Georgia/Times untuk kesan mewah klasik & miring yang anggun */
+    font-family: 'Georgia', 'Times New Roman', Times, serif;
+    background-color: #0b0b0b; 
+    /* Efek tekstur halus latar belakang */
+    background-image: radial-gradient(circle at 50% 50%, #161616 0%, #0b0b0b 100%);
+    color: #e5e5e5; 
+    line-height: 1.8; 
+    padding: 60px 20px; 
+}
+
+/* Bingkai Utama Berwarna Emas Mewah */
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    background: #111111; 
+    padding: 50px 40px; 
+    border-radius: 4px; 
+    /* Border gradasi warna emas */
+    border: 1px solid #d4af37;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.8), 0 0 15px rgba(212, 175, 55, 0.1);
+    position: relative;
+}
+
+/* Garis Tipis Ornamen Khas Portofolio Premium */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    right: 12px;
+    bottom: 12px;
+    border: 1px solid rgba(212, 175, 55, 0.15);
+    pointer-events: none;
+}
+
+/* Header Nama */
+.profile-header { 
+    text-align: center; 
+    margin-bottom: 45px; 
+    border-bottom: 1px solid rgba(212, 175, 55, 0.3); 
+    padding-bottom: 30px; 
+}
+.profile-header h1 { 
+    /* Warna teks emas metalik */
+    color: #d4af37;
+    background: linear-gradient(135deg, #f3e5ab 0%, #d4af37 50%, #aa7c11 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.8rem; 
+    font-weight: 400; 
+    font-style: italic; /* Membuat tulisan nama miring elegan */
+    letter-spacing: 2px;
+}
+.profile-header p { 
+    color: #a99260; 
+    font-size: 0.85rem; 
+    margin-top: 10px; 
+    letter-spacing: 3px;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+}
+
+/* Kotak Bagian (Section Box) */
+.section-box { 
+    background: #151515; 
+    padding: 30px; 
+    margin-bottom: 30px; 
+    border: 1px solid #222222;
+    border-top: 2px solid #d4af37; /* Garis atas emas */
+    transition: all 0.4s ease;
+}
+.section-box:hover { 
+    background: #181818;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.05);
+    border-top-color: #f3e5ab;
+}
+
+/* Judul Kategori */
+h2 { 
+    color: #d4af37; 
+    font-size: 1.3rem; 
+    margin-bottom: 20px; 
+    font-weight: 400; 
+    font-style: italic; /* Judul miring */
+    letter-spacing: 1px;
+    border-bottom: 1px dashed rgba(212, 175, 55, 0.2);
+    padding-bottom: 5px;
+}
+
+/* List Identitas Diri */
+.identity-list { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); 
+    gap: 20px; 
+    list-style: none; 
+}
+.identity-list li { 
+    background: #111111; 
+    padding: 15px; 
+    border: 1px solid #222222;
+}
+.identity-list strong { 
+    color: #a99260; 
+    display: block; 
+    font-size: 0.75rem; 
+    text-transform: uppercase; 
+    letter-spacing: 1.5px; 
+    font-family: 'Segoe UI', sans-serif;
+    margin-bottom: 5px;
+}
+.identity-list span { 
+    color: #ffffff; 
+    font-weight: 400; 
+    font-size: 1.1rem; 
+    font-style: italic; /* Isi data dibuat miring agar serasi */
+}
+
+/* Paragraf Narasi */
+p { 
+    color: #cccccc; 
+    text-align: justify; 
+    font-size: 0.95rem; 
+    font-style: italic; /* Narasi miring anggur klasik */
+    text-indent: 20px;
+}
