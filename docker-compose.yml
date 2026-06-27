@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  web:
+    build: .
+    image: anisaaulia/web-profil-elegant:latest
+    container_name: web_profil_anisa
+    ports:
+      - "8484:80"
+    restart: always
